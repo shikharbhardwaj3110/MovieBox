@@ -9,7 +9,7 @@ const Header = () => {
   const [featured, setFeatured] = useState({})
 
   const getFeatured = async () => {
-    const result = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=cc18f3a1e6cefbc48661a9004ba8e756&page=1`)
+    const result = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=1`)
     setFeatured(result.data.results[0]);
   }
 

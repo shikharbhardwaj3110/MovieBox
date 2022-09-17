@@ -41,16 +41,16 @@ const Slider = ({ action, type, mediaType, mediaId }) => {
 
         let result;
         if (action == "Trending Movies") {
-            result = await axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=${process.env.API_KEY}&page=1`);
+            result = await axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=${process.env.REACT_APP_API_KEY}&page=1`);
         }
         else if (action == "Upcoming Movies") {
-            result = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.API_KEY}&language=en-US&page=1`)
+            result = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`)
         }
         else if (action == "Top Rated TV") {
-            result = await axios.get(`https://api.themoviedb.org/3/tv/top_rated?api_key=${process.env.API_KEY}&language=en-US&page=1`)
+            result = await axios.get(`https://api.themoviedb.org/3/tv/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`)
         }
         else if(action == "Similar") {
-            result = await axios.get(`https://api.themoviedb.org/3/${mediaType}/${mediaId}/similar?api_key=${process.env.API_KEY}&language=en-US&page=1`)
+            result = await axios.get(`https://api.themoviedb.org/3/${mediaType}/${mediaId}/similar?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`)
         }
 
         setItems(result.data.results);

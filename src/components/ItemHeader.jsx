@@ -9,7 +9,7 @@ const Header = () => {
 
     let { type, id } = useParams();
 
-    let baseUrl = `https://api.themoviedb.org/3/${type}/${id}?api_key=${process.env.API_KEY}&language=en-US`;
+    let baseUrl = `https://api.themoviedb.org/3/${type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
 
     const [featured, setFeatured] = useState({})
 
