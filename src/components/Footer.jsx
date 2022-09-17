@@ -15,7 +15,7 @@ const Footer = () => {
         backgroundSize: 'cover',
         backgroundPosition: '50%',
         backgroundRepeat: 'no-repeat',
-        position : 'absolute',
+        position : 'static',
         bottom: 0,
         width : '100vw'
         
