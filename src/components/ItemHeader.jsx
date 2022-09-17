@@ -11,19 +11,12 @@ const Header = () => {
 
     let baseUrl = `https://api.themoviedb.org/3/${type}/${id}?api_key=${process.env.API_KEY}&language=en-US`;
 
-    console.log(type, id)
-
     const [featured, setFeatured] = useState({})
 
     const getFeatured = async () => {
         const result = await axios.get(baseUrl)
-        console.log(result.data)
         setFeatured(result.data)
-        //console.log(result.data.results[0])
-        //setFeatured(result.data.results[0]);
     }
-
-    console.log("should render similar for media and id :",type, id)
 
     useEffect(() => {
         getFeatured()

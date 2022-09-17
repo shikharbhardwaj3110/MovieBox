@@ -22,7 +22,6 @@ const CustomHeader = ({ type }) => {
   const [staticQuery, setstaticQuery] = useState('')
 
   const handleSearch = async () => {
-    console.log("clicked on search")
     let result;
     if (query.length > 0) {
       if (type == "Movies") {

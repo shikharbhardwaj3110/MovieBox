@@ -53,7 +53,6 @@ const Slider = ({ action, type, mediaType, mediaId }) => {
             result = await axios.get(`https://api.themoviedb.org/3/${mediaType}/${mediaId}/similar?api_key=${process.env.API_KEY}&language=en-US&page=1`)
         }
 
-        console.log(result.data.results)
         setItems(result.data.results);
     }
 
