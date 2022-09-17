@@ -1,0 +1,42 @@
+.slider-box {
+    width: 13rem;
+    height: 18rem;
+ 
+}
+
+@media only screen and (min-width: 992px) {
+    .slider-wrapper {
+        position: relative;
+        vertical-align: middle;
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 21rem;
+    }
+}
+
+.slider-wrapper {
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow-y: auto;
+    max-height: 21rem;
+    overflow-y: hidden;
+}
+
+.action {
+    font-weight: 700;
+}
+
+.slider-title-wrapper {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slider-title {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color : white;
+}

@@ -1,0 +1,20 @@
+.navbar-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* .link-active {
+    text-decoration: underline;
+    text-decoration-color: rgb(108, 18, 18);
+} */
+
+.link {
+    text-decoration: none;
+}

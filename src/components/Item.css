@@ -1,0 +1,11 @@
+.item-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.item-title-text {
+    text-decoration: none;
+    color: white;
+}

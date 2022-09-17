@@ -1,0 +1,41 @@
+.custom-header-text {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-result-info {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.search-wrapper {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .search-wrapper {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {.search-wrapper {
+    width: 100%;
+}}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .search-wrapper {
+    width: 60%;
+}}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .search-wrapper {
+    width: 60%;
+}}
