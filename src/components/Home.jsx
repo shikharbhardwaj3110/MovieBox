@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from './Slider';
 import Header from '../UI/Header';
+import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <Slider action="Upcoming Movies" type="movie"/>
         <Slider action="Top Rated TV" type="tv"/>
       </div>
+      <Footer/>
     </>
 
   )

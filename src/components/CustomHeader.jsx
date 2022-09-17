@@ -5,6 +5,7 @@ import './CustomHeader.css';
 import { VscSearch } from "react-icons/vsc";
 import axios from 'axios';
 import Item from './Item';
+import Footer from './Footer';
 
 const CustomHeader = ({ type }) => {
 
@@ -111,6 +112,8 @@ const CustomHeader = ({ type }) => {
         </div>
       </div>
 
+
+      <Footer/>
 
     </div>
 
