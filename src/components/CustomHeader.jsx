@@ -26,13 +26,13 @@ const CustomHeader = ({ type }) => {
     let result;
     if (query.length > 0) {
       if (type == "Movies") {
-        result = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=cc18f3a1e6cefbc48661a9004ba8e756&language=en-US&page=1&include_adult=false&query=${query}`)
+        result = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&language=en-US&page=1&include_adult=false&query=${query}`)
         setstaticQuery(query)
         setItems(result.data.results)
       }
 
       else {
-        result = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=cc18f3a1e6cefbc48661a9004ba8e756&language=en-US&page=1&include_adult=false&query=${query}`)
+        result = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${process.env.API_KEY}&language=en-US&page=1&include_adult=false&query=${query}`)
         setstaticQuery(query)
         setItems(result.data.results)
       }

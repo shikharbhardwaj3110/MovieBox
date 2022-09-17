@@ -9,7 +9,7 @@ const Header = () => {
 
     let { type, id } = useParams();
 
-    let baseUrl = `https://api.themoviedb.org/3/${type}/${id}?api_key=cc18f3a1e6cefbc48661a9004ba8e756&language=en-US`;
+    let baseUrl = `https://api.themoviedb.org/3/${type}/${id}?api_key=${process.env.API_KEY}&language=en-US`;
 
     console.log(type, id)
 
