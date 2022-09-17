@@ -113,7 +113,7 @@ const CustomHeader = ({ type }) => {
       </div>
 
 
-      <Footer/>
+      
 
     </div>
 

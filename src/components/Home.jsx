@@ -12,7 +12,6 @@ const Home = () => {
         <Slider action="Upcoming Movies" type="movie"/>
         <Slider action="Top Rated TV" type="tv"/>
       </div>
-      <Footer/>
     </>
 
   )

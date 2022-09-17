@@ -9,6 +9,7 @@ import Header from './UI/Header';
 import Movies from './components/Movies';
 import TV from './components/TV';
 import ItemHeader from './components/ItemHeader';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/tv" element={<TV/>}></Route>
             <Route exact path="/:type/:id" element={<ItemHeader/>}></Route>
           </Routes>
+          <Footer/>
         </div>
       </Router>
     </div>
