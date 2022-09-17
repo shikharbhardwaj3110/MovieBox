@@ -41,6 +41,12 @@ const CustomHeader = ({ type }) => {
     }
   }
 
+  const handleKeypress = e => {
+    if (e.keyCode === 13) {
+      handleSearch();
+    }
+  };
+
 
   return (
     <div>
@@ -55,7 +61,9 @@ const CustomHeader = ({ type }) => {
               <input placeholder='Search for something...' className='w-100 py-2 border-0 ps-1 rounded' value={query}
                 onChange={(e) => {
                   setQuery(e.target.value)
-                }}>
+                }}
+                onKeyPress={handleKeypress}
+                >
               </input>
             </div>
           </div>
@@ -76,7 +84,7 @@ const CustomHeader = ({ type }) => {
           {
             items.map((item) => {
               return (
-                <Item data={item} type={type}/>
+                <Item data={item} type={type} />
               )
             })
           }
