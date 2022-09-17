@@ -42,7 +42,9 @@ const CustomHeader = ({ type }) => {
   }
 
   const handleKeypress = e => {
-    if (e.keyCode === 13) {
+    console.log(e)
+    if (e.charCode === 13) {
+      console.log("enter pressed !")
       handleSearch();
     }
   };
